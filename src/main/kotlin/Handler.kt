@@ -7,6 +7,9 @@ class Handler(val service: Service) {
         if(servicelayer){
             return "true"
         }
+        else if(servicelayer){
+            return "def"
+        }
         else{
             return "false"
         }
