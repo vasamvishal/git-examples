@@ -1,10 +1,14 @@
+import Model.Car
 import Model.DomainModel
 import Request.Student
+import com.fasterxml.jackson.databind.ObjectMapper
 import io.kotlintest.shouldBe
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify
 import org.junit.jupiter.api.Test
+import java.io.File
+
 
 internal class CipHandlerTest {
     val service = mockk<Service>();
@@ -17,7 +21,7 @@ internal class CipHandlerTest {
             DomainModel(student.rollName, student.name, student.age, student.cls, student.age * student.rollName)
         val abc = true
         every { service.getStudentMarks(studentDomainModel) } returns abc
-        val response=handler.getStudent(student)
+        val response = handler.getStudent(student)
         response shouldBe "true";
 
         verify { service.getStudentMarks(studentDomainModel) }

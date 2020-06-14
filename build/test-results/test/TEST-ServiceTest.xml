@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-12T19:31:21" hostname="Vishals-MacBook-Pro.local" time="1.437">
-  <properties/>
-  <testcase name="getStudentMarks()" classname="ServiceTest" time="1.437"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
